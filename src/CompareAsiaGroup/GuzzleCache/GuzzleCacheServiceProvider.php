@@ -1,6 +1,6 @@
 <?php
 
-namespace Remic\GuzzleCache;
+namespace CompareAsiaGroup\GuzzleCache;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -29,7 +29,7 @@ class GuzzleCacheServiceProvider extends ServiceProvider
             $this->publishes([$configPath => config_path($this->packageName.'.php')], 'config');
         }
 
-        $this->app->bindShared('Remic\GuzzleCache\Factory', function ($app) {
+        $this->app->bindShared('CompareAsiaGroup\GuzzleCache\Factory', function ($app) {
             $lifetime = config('guzzlecache.lifetime');
             $customStore = config('guzzlecache.custom_store');
             $cachePrefix = config('guzzlecache.cache_prefix');
@@ -43,9 +43,9 @@ class GuzzleCacheServiceProvider extends ServiceProvider
             }
         });
 
-        $this->app->bind('guzzlecache', 'Remic\GuzzleCache\Factory');
+        $this->app->bind('guzzlecache', 'CompareAsiaGroup\GuzzleCache\Factory');
 
-        $this->app->make('Remic\GuzzleCache\Factory');
+        $this->app->make('CompareAsiaGroup\GuzzleCache\Factory');
     }
 
     /**

@@ -1,14 +1,16 @@
-<?php namespace RemiCollin\GuzzleCache\Facades;
+<?php
+
+namespace CompareAsiaGroup\GuzzleCache\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
-class GuzzleCache extends Facade
+class Guzzle extends Facade
 {
 
     protected static function getFacadeAccessor()
     {
 
-    	$client = app('laraguzzle');
+    	$client = \GuzzleHttp\Client;
 
         return $client;
         

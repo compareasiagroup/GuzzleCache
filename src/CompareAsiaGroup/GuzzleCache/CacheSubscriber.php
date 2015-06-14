@@ -1,4 +1,4 @@
-<?php namespace Remic\GuzzleCache;
+<?php namespace CompareAsiaGroup\GuzzleCache;
 
 use GuzzleHttp\Event\SubscriberInterface;
 use GuzzleHttp\Event\BeforeEvent;

@@ -16,8 +16,8 @@ Add these aliases to your config/app.php :
 
 ```php
 
-    'Guzzle'        => 'Remic\GuzzleCache\Facades\Guzzle', 
-    'GuzzleCache'   => 'Remic\GuzzleCache\Facades\GuzzleCache',
+    'Guzzle'        => 'CompareAsiaGroup\GuzzleCache\Facades\Guzzle', 
+    'GuzzleCache'   => 'CompareAsiaGroup\GuzzleCache\Facades\GuzzleCache',
 
 ```
 
@@ -25,7 +25,7 @@ Add this line to your config/app.php providers :
 
 ```php
 
-    'Remic\GuzzleCache\GuzzleCacheServiceProvider', 
+    'CompareAsiaGroup\GuzzleCache\GuzzleCacheServiceProvider', 
 
 ```
 Then publish the configuration file :
