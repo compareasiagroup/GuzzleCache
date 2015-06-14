@@ -1,5 +1,5 @@
 {
-    "name": "remic/guzzlecache",
+    "name": "compareasiagroup/guzzlecache",
     "description": "Laravel 5 package for caching Guzzle's GET requests.",
     "keywords": ["laravel5","l5","cache","guzzle","http","api","proxy"],
     "homepage": "",
@@ -7,6 +7,10 @@
         {
             "name": "Rémi Collin",
             "email": "remi@plateau.io"
+        },
+        {
+            "name": "CompareAsiaGroup",
+            "email": "engineering@compareasiagroup.com"
         }
     ],
     "require": {
@@ -18,7 +22,7 @@
     },
     "autoload": {
        "psr-4": {
-         "Remic\\GuzzleCache\\": "src/GuzzleCache"
+         "CompareAsiaGroup\\GuzzleCache\\": "src/CompareAsiaGroup/GuzzleCache"
         }
     },
     "license": "MIT"

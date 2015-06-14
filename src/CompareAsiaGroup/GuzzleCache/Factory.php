@@ -1,4 +1,4 @@
-<?php namespace Remic\GuzzleCache;
+<?php namespace CompareAsiaGroup\GuzzleCache;
 
 use Illuminate\Contracts\Cache\Repository as Cache;
 use GuzzleHttp\Message\Response;
