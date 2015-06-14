@@ -24,7 +24,7 @@ class GuzzleCacheServiceProvider extends ServiceProvider
     {
         // Check is performed as this function doesn't exist in Lumen
         if (function_exists('config_path')) {
-            $configPath = __DIR__.'/../config/config.php';
+            $configPath = __DIR__ . '/../../config/config.php';
 
             $this->publishes([$configPath => config_path($this->packageName.'.php')], 'config');
         }
@@ -53,7 +53,7 @@ class GuzzleCacheServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $configPath = __DIR__.'/../config/config.php';
+        $configPath = __DIR__.'/../../config/config.php';
         $this->mergeConfigFrom($configPath, $this->packageName);
     }
 }
